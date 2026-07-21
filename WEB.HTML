@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutrition & Healthy Living</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4fff5;
+color:#333;
+}
+
+header{
+background:linear-gradient(90deg,#2ecc71,#27ae60);
+color:white;
+text-align:center;
+padding:30px;
+}
+
+header h1{
+font-size:40px;
+}
+
+nav{
+background:#145a32;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80");
+height:500px;
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero h2{
+background:rgba(0,0,0,0.6);
+color:white;
+padding:20px;
+font-size:40px;
+border-radius:10px;
+}
+
+section{
+padding:40px;
+}
+
+h2{
+text-align:center;
+color:#27ae60;
+margin-bottom:20px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:white;
+width:300px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+overflow:hidden;
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+color:#27ae60;
+}
+
+.card p{
+padding:10px;
+}
+
+.bmi{
+background:#e8f8f5;
+text-align:center;
+padding:40px;
+}
+
+input{
+padding:10px;
+margin:10px;
+width:180px;
+font-size:16px;
+}
+
+button{
+padding:10px 20px;
+background:#27ae60;
+color:white;
+border:none;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#145a32;
+}
+
+#result{
+font-size:22px;
+margin-top:20px;
+font-weight:bold;
+}
+
+footer{
+background:#145a32;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🥗 Nutrition & Healthy Living</h1>
+<p>Eat Healthy • Stay Fit • Live Longer</p>
+</header>
+
+<nav>
+<a href="#nutrition">Nutrition</a>
+<a href="#vitamins">Vitamins</a>
+<a href="#diet">Balanced Diet</a>
+<a href="#bmi">BMI Calculator</a>
+</nav>
+
+<div class="hero">
+<h2>Healthy Food = Healthy Life</h2>
+</div>
+
+<section id="nutrition">
+
+<h2>🍎 What is Nutrition?</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80">
+<h3>Healthy Food</h3>
+<p>
+Nutrition is the process of taking in food and using it for growth,
+energy, repair, and maintaining good health.
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80">
+<h3>Fresh Fruits</h3>
+<p>
+Fruits provide vitamins, minerals, fiber, and antioxidants that keep
+our body strong and prevent diseases.
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80">
+<h3>Vegetables</h3>
+<p>
+Vegetables improve digestion, boost immunity, and supply important
+nutrients for a healthy body.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="vitamins">
+
+<h2>💊 Essential Vitamins</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80">
+<h3>Vitamin A</h3>
+<p>
+Good for eyesight and skin.<br>
+Sources: Carrots, Mangoes, Spinach.
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80">
+<h3>Vitamin C</h3>
+<p>
+Boosts immunity and helps wound healing.<br>
+Sources: Oranges, Lemon, Guava.
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80">
+<h3>Vitamin D</h3>
+<p>
+Strengthens bones and teeth.<br>
+Sources: Sunlight, Milk, Eggs.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="diet">
+
+<h2>🥗 Balanced Diet</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80">
+<h3>What is a Balanced Diet?</h3>
+<p>
+A balanced diet contains carbohydrates, proteins, fats,
+vitamins, minerals, fiber, and water in the right amounts.
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80">
+<h3>Healthy Plate</h3>
+<p>
+🥦 Vegetables 50%<br>
+🍚 Whole Grains 25%<br>
+🍗 Protein 25%<br>
+🥛 Dairy & Water
+</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=800&q=80">
+<h3>Healthy Habits</h3>
+<p>
+✔ Drink 8 glasses of water<br>
+✔ Exercise daily<br>
+✔ Eat fruits & vegetables<br>
+✔ Avoid junk food
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="bmi" id="bmi">
+
+<h2>⚖️ BMI Calculator</h2>
+
+<p>Enter your Height (meters) and Weight (kg)</p>
+
+<input type="number" id="height" placeholder="Height (m)">
+<input type="number" id="weight" placeholder="Weight (kg)">
+<br>
+
+<button onclick="calculateBMI()">Calculate BMI</button>
+
+<div id="result"></div>
+
+</section>
+
+<footer>
+
+<h3>🌿 Healthy Eating is a Lifestyle, Not a Diet.</h3>
+
+<p>Made with ❤️ using HTML, CSS & JavaScript</p>
+
+</footer>
+
+<script>
+
+function calculateBMI(){
+
+let height=document.getElementById("height").value;
+
+let weight=document.getElementById("weight").value;
+
+let bmi=(weight/(height*height)).toFixed(1);
+
+let message="";
+
+if(height=="" || weight==""){
+document.getElementById("result").innerHTML="Please enter all values.";
+return;
+}
+
+if(bmi<18.5)
+message="Underweight";
+
+else if(bmi<24.9)
+message="Normal Weight";
+
+else if(bmi<29.9)
+message="Overweight";
+
+else
+message="Obese";
+
+document.getElementById("result").innerHTML=
+"Your BMI is <b>"+bmi+"</b><br>Status: <b>"+message+"</b>";
+
+}
+
+</script>
+
+</body>
+</html>
