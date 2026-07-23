@@ -338,8 +338,7 @@ Good nutrition helps maintain body weight, improves immunity, boosts brain funct
 
 
 <script>
-    <script>
-function bmi() {
+    function bmi() {
     let height = parseFloat(document.getElementById("height").value);
     let weight = parseFloat(document.getElementById("weight").value);
 
@@ -352,6 +351,7 @@ function bmi() {
     height = height / 100;
 
     let bmi = weight / (height * height);
+
     let category = "";
 
     if (bmi < 18.5)
